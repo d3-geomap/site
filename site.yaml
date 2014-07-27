@@ -1,5 +1,5 @@
 site:
-  base_url: http://localhost:8080
+  base_url: http://d3-geomap.github.io
   disqus_shortname: null
 
 indexes:
