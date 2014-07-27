@@ -1,4 +1,5 @@
 #!/bin/bash
+logya gen
 cd ../d3-geomap.github.io/
 shopt -s extglob
 rm -r !(.git|.|..)
