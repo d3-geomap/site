@@ -1,6 +1,6 @@
 ---
 url: /map/choropleth/world/
-title: Choropleth World Map
+title: "Choropleth Map: World"
 template: example-map.html
 created: 2014-07-23 23:06:22
 scripts:

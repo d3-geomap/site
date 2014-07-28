@@ -1,5 +1,6 @@
 <h3>Example Maps</h3>
 <ul class="nav nav-pills nav-stacked">
-    <li><a href="/maps/choropleth/world/">Choropleth World</a></li>
-    <li><a href="/maps/choropleth/us-states/">Choropleth US States</a></li>
+    {% for d in indexes.map|reverse %}
+        <li><a href="{{ d.url }}">{{ d.title }}</a></li>
+    {% endfor %}
 </ul>

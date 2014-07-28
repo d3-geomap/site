@@ -1,6 +1,6 @@
 ---
 url: /map/choropleth/us-states/
-title: Choropleth US States
+title: "Choropleth Map: US States"
 template: example-map.html
 created: 2014-07-23 23:55:22
 data: static/data/sp.pop.totl.csv
