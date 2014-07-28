@@ -1,7 +1,7 @@
 ---
-url: /maps/choropleth/world/
-title: Choropleth World Map • d3.geomap
-template: page-with-sidebar.html
+url: /map/choropleth/world/
+title: Choropleth World Map
+template: example-map.html
 created: 2014-07-23 23:06:22
 scripts:
 - /d3-geomap/vendor/d3.geomap.dependencies.min.js

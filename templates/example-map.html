@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}{{ title }} • d3.geomap{% endblock%}
+
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col-lg-10 col-lg-offset-1">
+        <h1>{{ title }}</h1>
+        <div>{{ body }}</div>
+        <div id="map"></div>
+        {% if data %}
+            <h3>Data</h3>
+            <pre>{{ filesource(data, lines=6) }}...</pre>
+        {% endif %}
+        <hr>
+        {% include 'menus/docs.html' %}
+    </div>
+  </div>
+</div>
+{% endblock %}

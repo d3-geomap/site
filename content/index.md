@@ -1,7 +1,7 @@
 ---
 url: /
 title: d3.geomap - Create Geographic Maps for the Web
-template: page-with-sidebar.html
+template: example-map.html
 created: 2014-07-23 19:53:22
 scripts:
 - /d3-geomap/vendor/d3.geomap.dependencies.min.js
