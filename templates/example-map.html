@@ -11,6 +11,7 @@
         <div id="map"></div>
         {% if data %}
             <h3>Data</h3>
+            <p>See an excerpt of the data used in this map below. Currently CSV is the only supported data format for creating choropleth maps with d3.geomap.</p>
             <pre>{{ filesource(data, lines=6) }}...</pre>
         {% endif %}
         <hr>
