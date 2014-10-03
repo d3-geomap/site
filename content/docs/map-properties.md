@@ -10,6 +10,56 @@ Several properties can be set after initializing a d3.geomap object to influence
 
 ### General Properties
 
+This section documents the properties that can/must be set when a d3.geomap object is created.
+
+#### margin
+
+Can be set but serves no purpose yet.
+
+#### width
+
+The width of the map defaults to 960px.
+
+#### height: 500
+
+The height of the map defaults to 500px.
+
+#### geofile
+
+The topojson file, this is required.
+
+#### postUpdate
+
+function to run when update process is completed, i. e. the map is rendered. This can be used to draw symbols or provide your on zoom function for example.
+
+#### projection
+
+The map projection to be used, defaults to d3.geo.naturalEarth. Can be selected from [core d3](https://github.com/mbostock/d3/wiki/Geo-Projections) and extended [d3 geo projections](https://github.com/d3/d3-geo-projection).
+
+#### rotate
+
+The rotation of the map, defaults to [0, 0, 0], i. e. the rotation you are most likely to expect.
+
+#### svg
+
+The svg property can be used to access and manipulate the map DOM element.
+
+#### title
+
+The browser tooltip displayed when the mouse is moved over a map unit, e. g. a country in case of the default world map.
+
+#### unitId
+
+A property of the unit that is unique, e. g. the *iso3* code of a country, which is also the default value.
+
+#### units
+
+The property of the topojson objects that define its form.
+
+#### zoomMax
+
+The zoom factor to use when a map unit is clicked.
+
 ### Choropleth Properties
 
 #### colors
