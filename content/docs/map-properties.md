@@ -62,12 +62,26 @@ The zoom factor to use when a map unit is clicked.
 
 ### Choropleth Properties
 
+Properties specific to d3.geomap.choropleth objects.
+
+#### column
+
+The column from the CSV file that contains the values to be displayed on the map. You provide the appropriate column heading as a string value to the column method.
+
 #### colors
 
-TODO
+An array of color values. You can use [color brewer](http://colorbrewer2.org/) schemes available via the `colorbrewer` object, e. g. `colorbrewer.YlOrRd[9]` for a sequential Yellow, Orange, Red scheme with 9 different color values.
 
 #### domain
 
 The optional `domain` property allows you to specify the range of values used to colorize that map. If no `domain` is given the range will be determined from the data series.
 
 If `domain` is an array with 2 values [d3.scale.quantize](https://github.com/mbostock/d3/wiki/Quantitative-Scales#quantize) is used to calculate the color scale. If `domain` has more than 2 values [d3.scale.threshold](https://github.com/mbostock/d3/wiki/Quantitative-Scales#threshold) is used, in this case the elements in the `domain` must be sorted in ascending order and `domain` must contain one element less than the `colors` array.
+
+#### format
+
+The number format displayed in the legend and in tooltips.
+
+#### legend
+
+Defaults to `true`, i. e. display the built-in legend. If you prefer to add a legend on your own, set `legend` to `false` and implement a legend yourself in the `postUpdate` method.
