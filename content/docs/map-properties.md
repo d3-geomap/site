@@ -20,7 +20,7 @@ Can be set but serves no purpose yet.
 
 The width of the map defaults to 960px.
 
-#### height: 500
+#### height
 
 The height of the map defaults to 500px.
 
