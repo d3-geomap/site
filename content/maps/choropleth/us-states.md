@@ -5,11 +5,7 @@ template: example-map.html
 created: 2014-07-23 23:55:22
 data: static/data/venture-capital.csv
 scripts:
-- /d3-geomap/vendor/d3.geomap.dependencies.min.js
-- /d3-geomap/js/d3.geomap.min.js
 - /js/maps/choropleth/us-states.js
-styles:
-- /d3-geomap/css/d3.geomap.css
 ---
 This example shows how to create a choropleth map of states in the US using data from the [National Science Foundation](http://www.nsf.gov/statistics/seind14/index.cfm/state-data/download.htm) about venture capital spent in the US in 2012.
 

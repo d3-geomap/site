@@ -5,11 +5,7 @@ template: example-map.html
 created: 2014-07-23 23:06:22
 data: static/data/sp.pop.totl.csv
 scripts:
-- /d3-geomap/vendor/d3.geomap.dependencies.min.js
-- /d3-geomap/js/d3.geomap.min.js
 - /js/maps/choropleth/world.js
-styles:
-- /d3-geomap/css/d3.geomap.css
 ---
 This example shows how to create a choropleth world map with `d3.geomap.choropleth`. This example displays world population data from downloaded from the [World Bank databank](http://data.worldbank.org/indicator/SP.POP.TOTL).
 

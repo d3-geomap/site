@@ -1,14 +1,10 @@
 ---
 url: /
 title: d3.geomap - Create Geographic Maps for the Web
-template: example-map.html
+template: front.html
 created: 2014-07-23 19:53:22
 scripts:
-- /d3-geomap/vendor/d3.geomap.dependencies.min.js
-- /d3-geomap/js/d3.geomap.min.js
 - /js/maps/world-plain.js
-styles:
-- /d3-geomap/css/d3.geomap.css
 ---
 d3.geomap is a library for creating geographic maps that are rendered in a Web browser. d3.geomap is written in CoffeeSccript and built on top of D3.js.
 

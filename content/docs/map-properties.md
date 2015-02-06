@@ -1,11 +1,9 @@
 ---
 url: /docs/map-properties/
-title: Map Properties - d3.geomap Documentation
-template: page-no-title.html
+title: Map Properties
+template: page.html
 created: 2014-10-02 12:27:22
 ---
-# Map Properties
-
 Several properties can be set after initializing a d3.geomap object to influence the map display.
 
 ### General Properties
@@ -18,11 +16,11 @@ Can be set but serves no purpose yet.
 
 #### width
 
-The width of the map defaults to 960px.
+The width of the map defaults to `960px`.
 
 #### height
 
-The height of the map defaults to 500px.
+The height of the map defaults to `500px`.
 
 #### geofile
 
@@ -38,7 +36,7 @@ The map projection to be used, defaults to d3.geo.naturalEarth. Can be selected 
 
 #### rotate
 
-The rotation of the map, defaults to [0, 0, 0], i. e. the rotation you are most likely to expect.
+The rotation of the map, defaults to `[0, 0, 0]`, i. e. the rotation you are most likely to expect.
 
 #### svg
 
@@ -50,7 +48,7 @@ The browser tooltip displayed when the mouse is moved over a map unit, e. g. a c
 
 #### unitId
 
-A property of the unit that is unique, e. g. the *iso3* code of a country, which is also the default value.
+A property of the unit that is unique, e. g. the `iso3` code of a country, which is also the default value.
 
 #### units
 

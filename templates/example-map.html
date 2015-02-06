@@ -2,6 +2,11 @@
 
 {% block title %}{{ title }} • d3.geomap{% endblock%}
 
+{% block styles %}
+<link href="/d3-geomap/css/d3.geomap.css#v={{ version }}" rel="stylesheet">
+{{ super() }}
+{% endblock%}
+
 {% block content %}
 <div class="container">
   <div class="row">
@@ -20,3 +25,9 @@
   </div>
 </div>
 {% endblock %}
+
+{% block body_scripts %}
+<script src="/d3-geomap/vendor/d3.geomap.dependencies.min.js#v={{ version }}"></script>
+<script src="/d3-geomap/js/d3.geomap.min.js#v={{ version }}"></script>
+{{ super() }}
+{% endblock%}
