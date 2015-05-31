@@ -10,7 +10,11 @@ d3.geomap is a library for creating geographic maps that are rendered in a Web b
 
 ## Quickstart
 
-Include the downloaded dependencies in your HTML file and create a `div` with the id `map`. In the other examples on this site inclusion of this code is assumed and not repeated on every page.
+Set the charset of your document to `utf-8` right at the beginning of the HTML head section, then include the downloaded dependencies, and in the body create a `div` with the id `map`.
+
+Setting the charset to `utf-8` is **mandatory**, because d3, d3-geo-projection and several of the topojson files contain characters that may not work with the default encoding otherwise set by the browser.
+
+In the other examples on this site inclusion of this code is assumed and not repeated on every page.
 
     {{ filesource('static/html/d3.geomap.html') }}
 
