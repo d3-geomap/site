@@ -1,12 +1,14 @@
 ---
 url: /docs/map-properties/
-title: Map Properties
+title: Map Properties - Accessors and Attributes
 template: page.html
 created: 2014-10-02 12:27:22
 ---
-Maps can be customized through the following accessors. If called with a value the value will be set and the map object returned. If called without an argument the current value of the corresponding property will be returned.
+Maps can be customized through the accessors documented here. If an accessor is called with a value the value will be set and the map object returned. If called without an argument the current value of the corresponding property will be returned.
 
-### General Properties d3.geomap()
+In addition map properties can be accessed via attributes to allow for customizations beyond the capabilities of this library.
+
+### d3.geomap accessors
 
 This section documents accessors that can/must be set when a d3.geomap object is created.
 
@@ -54,9 +56,15 @@ The name of the `topojson.objects` property that contains the geographic units t
 
 The zoom factor to use when a map unit is clicked. Defaults to 4.
 
-### Choropleth Properties d3.geomap.choropleth()
+### d3.geomap attributes
 
-Accessors specific to d3.geomap.choropleth objects.
+#### svg
+
+The [d3.selection](https://github.com/mbostock/d3/wiki/Selections) for the map object.
+
+### d3.geomap.choropleth accesors
+
+In addition to the accessors from d3.geomap, d3.geomap.choropleth objects provide the accessors listed below..
 
 #### column - required
 
@@ -81,3 +89,14 @@ Defaults to `false`, so you can create your own legend by providing the code to 
 #### valueScale - optional
 
 The D3 scale function to use to determine colors based on the domain, i. e. the input values, and the color range. Defaults to [d3.scale.quantize](https://github.com/mbostock/d3/wiki/Quantitative-Scales#quantize).
+
+### d3.geomap.choropleth attributes
+
+#### extent
+
+The extent of the data range, i. e. minimum and maximum value in the given column of the CSV data file.
+
+#### colorScale
+
+A function that returns the color from the range of colors for the numeric value passed as its argument.
+
