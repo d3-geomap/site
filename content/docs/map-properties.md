@@ -12,21 +12,13 @@ In addition map properties can be accessed via attributes to allow for customiza
 
 This section documents accessors that can/must be set when a d3.geomap object is created.
 
-#### margin - optional
-
-FIXME Can be set but serves no purpose yet.
-
-#### width - optional
-
-The width of the map. Defaults to `960px`.
-
-#### height - optional
-
-The height of the map. Defaults to `500px`.
-
 #### geofile - required
 
 The topojson file loaded to draw the map units, for example countries on a world map.
+
+#### height - optional
+
+The height of the map. By default will be calculated based on width.
 
 #### postUpdate - optional
 
@@ -40,9 +32,17 @@ The map projection to be used. Defaults to `d3.geo.naturalEarth`. Can be selecte
 
 The rotation of the map. Defaults to `[0, 0, 0]`, i. e. the rotation you are most likely to expect.
 
+### scale - optional
+
+A numeric value to set the size of the map. By default will be calculated based on width.
+
 #### title - optional
 
 A function that receives the topojson feature object for the corresponding map unit, when the mouse is moved over it. The return value of this functions is the text shown in the standard browser tooltip. Defaults to `(d) => d.properties.name`.
+
+### translate - optional
+
+An array of x and y coordinates in pixels to center the map. By default will be calculated based on width.
 
 #### unitId - optional
 
@@ -51,6 +51,10 @@ A property of the unit that is unique, e. g. the `iso3` code of a country, which
 #### units - optional
 
 The name of the `topojson.objects` property that contains the geographic units to display on the map.
+
+#### width - optional
+
+The width of the map. By default will be set to the width of the containing element, i. e. the element passed to the selection.
 
 #### zoomFactor - optional
 

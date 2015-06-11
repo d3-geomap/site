@@ -9,6 +9,7 @@ d3.geomap was originally written in CoffeeScript. For version 1 I ported it to J
 
 In an effort to simplify the code and make it more readably and maintainable, I refactored the library internally. The public facing API stayed mostly the same, except for the changes listed below.
 
+* Maps are now responsive by default if width is not set.
 * Turned `svg` accessor method into an attribute in d3.geomap.
 * Added the `valueScale` accessor to d3.geomap.choropleth.
 * Added `colorScale` and `extend` attributes to d3.geomap.choropleth.
