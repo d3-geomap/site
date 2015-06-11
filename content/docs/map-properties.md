@@ -4,82 +4,80 @@ title: Map Properties
 template: page.html
 created: 2014-10-02 12:27:22
 ---
-Several properties can be set after initializing a d3.geomap object to influence the map display.
+Maps can be customized through the following accessors. If called with a value the value will be set and the map object returned. If called without an argument the current value of the corresponding property will be returned.
 
-### General Properties
+### General Properties d3.geomap()
 
-This section documents the properties that can/must be set when a d3.geomap object is created.
+This section documents accessors that can/must be set when a d3.geomap object is created.
 
-#### margin
+#### margin - optional
 
-Can be set but serves no purpose yet.
+FIXME Can be set but serves no purpose yet.
 
-#### width
+#### width - optional
 
-The width of the map defaults to `960px`.
+The width of the map. Defaults to `960px`.
 
-#### height
+#### height - optional
 
-The height of the map defaults to `500px`.
+The height of the map. Defaults to `500px`.
 
-#### geofile
+#### geofile - required
 
-The topojson file, this is required.
+The topojson file loaded to draw the map units, for example countries on a world map.
 
-#### postUpdate
+#### postUpdate - optional
 
-function to run when update process is completed, i. e. the map is rendered. This can be used to draw symbols or provide your on zoom function for example.
+A function to run when the update process is completed, i. e. the map is rendered. This can be used to draw symbols or provide your on zoom function for example.
 
-#### projection
+#### projection - optional
 
-The map projection to be used, defaults to d3.geo.naturalEarth. Can be selected from [core d3](https://github.com/mbostock/d3/wiki/Geo-Projections) and extended [d3 geo projections](https://github.com/d3/d3-geo-projection).
+The map projection to be used. Defaults to `d3.geo.naturalEarth`. Can be selected from [core d3](https://github.com/mbostock/d3/wiki/Geo-Projections) and extended [d3 geo projections](https://github.com/d3/d3-geo-projection).
 
-#### rotate
+#### rotate - optional
 
-The rotation of the map, defaults to `[0, 0, 0]`, i. e. the rotation you are most likely to expect.
+The rotation of the map. Defaults to `[0, 0, 0]`, i. e. the rotation you are most likely to expect.
 
-#### svg
+#### title - optional
 
-The svg property can be used to access and manipulate the map DOM element.
+A function that receives the topojson feature object for the corresponding map unit, when the mouse is moved over it. The return value of this functions is the text shown in the standard browser tooltip. Defaults to `(d) => d.properties.name`.
 
-#### title
-
-The browser tooltip displayed when the mouse is moved over a map unit, e. g. a country in case of the default world map.
-
-#### unitId
+#### unitId - optional
 
 A property of the unit that is unique, e. g. the `iso3` code of a country, which is also the default value.
 
-#### units
+#### units - optional
 
-The property of the topojson objects that define its form.
+The name of the `topojson.objects` property that contains the geographic units to display on the map.
 
-#### zoomMax
+#### zoomFactor - optional
 
-The zoom factor to use when a map unit is clicked.
+The zoom factor to use when a map unit is clicked. Defaults to 4.
 
-### Choropleth Properties
+### Choropleth Properties d3.geomap.choropleth()
 
-Properties specific to d3.geomap.choropleth objects.
+Accessors specific to d3.geomap.choropleth objects.
 
-#### column
+#### column - required
 
 The column from the CSV file that contains the values to be displayed on the map. You provide the appropriate column heading as a string value to the column method.
 
-#### colors
+#### colors - optional
 
-An array of color values. You can use [color brewer](http://colorbrewer2.org/) schemes available via the `colorbrewer` object, e. g. `colorbrewer.YlOrRd[9]` for a sequential Yellow, Orange, Red scheme with 9 different color values.
+An array of color values. You can use [color brewer](http://colorbrewer2.org/) schemes available via the `colorbrewer` object, e. g. `colorbrewer.OrRd[9]` for a sequential orange-red scheme with 9 different color values, which is the default.
 
-#### domain
+#### domain - optional
 
-The optional `domain` property allows you to specify the range of values used to colorize that map. If no `domain` is given the range will be determined from the data series.
+Specify the array of values used to determine appropriate color values. Defaults to the extent of values from the data series set via the `column` accessor.
 
-If `domain` is an array with 2 values [d3.scale.quantize](https://github.com/mbostock/d3/wiki/Quantitative-Scales#quantize) is used to calculate the color scale. If `domain` has more than 2 values [d3.scale.threshold](https://github.com/mbostock/d3/wiki/Quantitative-Scales#threshold) is used, in this case the elements in the `domain` must be sorted in ascending order and `domain` must contain one element less than the `colors` array.
+#### format - optional
 
-#### format
+The number format used for values displayed in the legend and in tooltips. Defaults to `d3.format(',.02f')`.
 
-The number format displayed in the legend and in tooltips.
+#### legend - optional
 
-#### legend
+Defaults to `false`, so you can create your own legend by providing the code to draw it to the `postUpdate` method. If set to `true` the built-in legend will be displayed. You can modify that legend in your `postUpdate` function.
 
-Defaults to `true`, i. e. display the built-in legend. If you prefer to add a legend on your own, set `legend` to `false` and implement a legend yourself in the `postUpdate` method.
+#### valueScale - optional
+
+The D3 scale function to use to determine colors based on the domain, i. e. the input values, and the color range. Defaults to [d3.scale.quantize](https://github.com/mbostock/d3/wiki/Quantitative-Scales#quantize).
