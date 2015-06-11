@@ -92,11 +92,14 @@ The D3 scale function to use to determine colors based on the domain, i. e. the 
 
 ### d3.geomap.choropleth attributes
 
-#### extent
+#### data
 
-The extent of the data range, i. e. minimum and maximum value in the given column of the CSV data file.
+The data object created from the loaded CSV file.
 
 #### colorScale
 
 A function that returns the color from the range of colors for the numeric value passed as its argument.
 
+#### extent
+
+The extent of the data range, i. e. minimum and maximum value in the given column of the CSV data file.
