@@ -92,6 +92,10 @@ Defaults to `false`, so you can create your own legend by providing the code to 
 
 If set to `true` the built-in legend will be displayed. You can set the width and height of the legend by passing an object with `width` and `height` attributes set to numeric values.
 
+#### duration - optional
+
+If set countries will be colored using a transition of the specified duration in milliseconds. Defaults to `null`, i. e. no transition animation.
+
 #### valueScale - optional
 
 The D3 scale function to use to determine colors based on the domain, i. e. the input values, and the color range. Defaults to [d3.scale.quantize](https://github.com/mbostock/d3/wiki/Quantitative-Scales#quantize).
