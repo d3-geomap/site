@@ -88,7 +88,9 @@ The number format used for values displayed in the legend and in tooltips. Defau
 
 #### legend - optional
 
-Defaults to `false`, so you can create your own legend by providing the code to draw it to the `postUpdate` method. If set to `true` the built-in legend will be displayed. You can modify that legend in your `postUpdate` function.
+Defaults to `false`, so you can create your own legend by providing the code to draw it as a callback function to the `postUpdate` method.
+
+If set to `true` the built-in legend will be displayed. You can set the width and height of the legend by passing an object with `width` and `height` attributes set to numeric values.
 
 #### valueScale - optional
 
