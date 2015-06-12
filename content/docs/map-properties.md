@@ -36,10 +36,6 @@ The rotation of the map. Defaults to `[0, 0, 0]`, i. e. the rotation you are mos
 
 A numeric value to set the size of the map. By default will be calculated based on width.
 
-#### title - optional
-
-A function that receives the topojson feature object for the corresponding map unit, when the mouse is moved over it. The return value of this functions is the text shown in the standard browser tooltip. Defaults to `(d) => d.properties.name`.
-
 ### translate - optional
 
 An array of x and y coordinates in pixels to center the map. By default will be calculated based on width.
@@ -51,6 +47,10 @@ A property of the unit that is unique, e. g. the `iso3` code of a country, which
 #### units - optional
 
 The name of the `topojson.objects` property that contains the geographic units to display on the map.
+
+#### unitTitle - optional
+
+A function that receives the topojson feature object for the corresponding map unit, when the mouse is moved over it. The return value of this functions is the text shown in the standard browser tooltip. Defaults to `(d) => d.properties.name`.
 
 #### width - optional
 
