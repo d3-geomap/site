@@ -6,7 +6,7 @@ created: 2014-07-23 19:53:22
 scripts:
 - /js/maps/world-plain.js
 ---
-d3.geomap is a library for creating geographic maps that are rendered in a Web browser. d3.geomap is written in CoffeeScript and built on top of D3.js.
+d3.geomap is a library for creating geographic maps that are rendered in a Web browser. d3.geomap is written in JavaScript using features introduced in EcmaScript 6 and later and built on top of D3.js.
 
 ## Quickstart
 
