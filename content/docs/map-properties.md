@@ -42,7 +42,7 @@ An array of x and y coordinates in pixels to center the map. By default will be 
 
 #### unitId - optional
 
-A property of the unit that is unique, e. g. the `iso3` code of a country, which is also the default value.
+A property of the unit that is unique, e. g. the `iso3` code of a country, which is also the default value. The value of `unitId` is also used to prefix CSS classes of units, e. g. Spain would get a CSS class of `iso3-ESP`.
 
 #### units - optional
 
@@ -61,6 +61,10 @@ The width of the map. By default will be set to the width of the containing elem
 The zoom factor to use when a map unit is clicked. Defaults to 4.
 
 ### d3.geomap attributes
+
+#### geo
+
+The loaded topojson data, which gets assigned during the draw method.
 
 #### svg
 
