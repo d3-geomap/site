@@ -10,4 +10,4 @@ scripts:
 ---
 ## Source
 
-    {{ filesource('static/js/maps/choropleth/us-states.js') }}
+    {{ filesource('static/js/debug.js') }}
