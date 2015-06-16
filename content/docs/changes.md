@@ -7,7 +7,7 @@ This page lists significant changes introduced in releases of d3.geomap.
 
 ## Changes in Version 1.0.1
 
-* Use ES5 forEach instead of ES6 for of to avoid using polyfill to support older browsers.
+* Use ES5 `forEach` instead of ES6 `for of` to avoid using polyfill to support older browsers.
 
 ## Changes in Version 1.0.0
 
