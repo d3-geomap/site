@@ -3,8 +3,6 @@ title: Changelog
 template: page.html
 created: 2015-06-11 21:15:47
 ---
-# Changelog
-
 This page lists significant changes introduced in releases of d3.geomap.
 
 ## Changes in Version 1.0.0

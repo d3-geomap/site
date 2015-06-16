@@ -32,17 +32,21 @@ The map projection to be used. Defaults to `d3.geo.naturalEarth`. Can be selecte
 
 The rotation of the map. Defaults to `[0, 0, 0]`, i. e. the rotation you are most likely to expect.
 
-### scale - optional
+#### scale - optional
 
 A numeric value to set the size of the map. By default will be calculated based on width.
 
-### translate - optional
+#### translate - optional
 
 An array of x and y coordinates in pixels to center the map. By default will be calculated based on width.
 
 #### unitId - optional
 
-A property of the unit that is unique, e. g. the `iso3` code of a country, which is also the default value. The value of `unitId` is also used to prefix CSS classes of units, e. g. Spain would get a CSS class of `iso3-ESP`.
+A property of the unit that is unique, e. g. the `iso3` code of a country, which is also the default value.
+
+#### unitPrefix - optional
+
+The value of `unitPrefix` is used to prefix CSS classes of units. It defaults to `unit-`, e. g. Spain would get a CSS class of `unit-ESP`.
 
 #### units - optional
 
