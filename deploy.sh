@@ -1,4 +1,6 @@
 #!/bin/bash
+set -euo pipefail
+
 logya gen
 cd ../d3-geomap.github.io/
 shopt -s extglob
