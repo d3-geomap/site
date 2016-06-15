@@ -22,7 +22,7 @@ The height of the map. By default will be calculated based on width.
 
 #### postUpdate - optional
 
-A function to run when the update process is completed, i. e. the map is rendered. This can be used to draw symbols or provide your on zoom function for example.
+A function to run when the update process is completed, i. e. the map is rendered. This can be used to draw symbols or provide your own zoom function for example.
 
 #### projection - optional
 
