@@ -5,6 +5,11 @@ created: 2015-06-11 21:15:47
 ---
 This page lists significant changes introduced in releases of d3.geomap.
 
+## Changes in Version 1.0.2
+
+* Fixed issue #37: only colorize country and change tooltip if value is defined.
+* Fixed issue #38: added script to change FIPS code for Minnesota.
+
 ## Changes in Version 1.0.1
 
 * Use ES5 `forEach` instead of ES6 `for of` to avoid using polyfill to support older browsers.
