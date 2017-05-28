@@ -25,7 +25,7 @@ A function to run when the update process is completed, i. e. the map is rendere
 
 #### projection - optional
 
-The map projection to be used. Defaults to `d3.geo.naturalEarth`. Can be selected from [core d3](https://github.com/mbostock/d3/wiki/Geo-Projections) and extended [d3 geo projections](https://github.com/d3/d3-geo-projection).
+The map projection to be used. Defaults to `d3.geoNaturalEarth`. Can be selected from [core d3](https://github.com/d3/d3-geo/blob/master/README.md#projections) and extended [d3 geo projections](https://github.com/d3/d3-geo-projection).
 
 #### rotate - optional
 
