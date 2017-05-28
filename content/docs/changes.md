@@ -8,6 +8,7 @@ This page lists significant changes introduced in releases of d3.geomap.
 ## Changes in Version 2.0.0
 
 * Upgrade to D3 version 4.
+* Use mapshaper to create TopoJSON files. Id values are now accessed via the properties attribute of a feature object.
 
 ## Changes in Version 1.0.2
 
