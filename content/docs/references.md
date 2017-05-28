@@ -1,5 +1,4 @@
 ---
-url: /docs/references/
 title: References
 template: page.html
 created: 2015-02-07 00:02:22

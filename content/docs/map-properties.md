@@ -1,5 +1,4 @@
 ---
-url: /docs/map-properties/
 title: Map Properties - Accessors and Attributes
 template: page.html
 created: 2014-10-02 12:27:22
@@ -14,7 +13,7 @@ This section documents accessors that can/must be set when a d3.geomap object is
 
 #### geofile - required
 
-The topojson file loaded to draw the map units, for example countries on a world map.
+The TopoJSON file loaded to draw the map units, for example countries on a world map.
 
 #### height - optional
 
@@ -54,7 +53,7 @@ The name of the `topojson.objects` property that contains the geographic units t
 
 #### unitTitle - optional
 
-A function that receives the topojson feature object for the corresponding map unit, when the mouse is moved over it. The return value of this functions is the text shown in the standard browser tooltip. Defaults to `(d) => d.properties.name`.
+A function that receives the TopoJSON feature object for the corresponding map unit, when the mouse is moved over it. The return value of this functions is the text shown in the standard browser tooltip. Defaults to `(d) => d.properties.name`.
 
 #### width - optional
 
@@ -68,7 +67,7 @@ The zoom factor to use when a map unit is clicked. Defaults to 4.
 
 #### geo
 
-The loaded topojson data, which gets assigned during the draw method.
+The loaded TopoJSON data, which gets assigned during the draw method.
 
 #### svg
 
