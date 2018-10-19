@@ -7,7 +7,5 @@ var map = d3.geomap.choropleth()
     .legend(true);
 
 d3.csv('/data/venture-capital.csv', function(error, data) {
-    d3.select('#map')
-        .datum(data)
-        .call(map.draw, map);
+    map.draw(d3.select('#map').datum(data));
 });

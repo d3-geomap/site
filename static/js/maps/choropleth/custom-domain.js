@@ -7,7 +7,5 @@ var map = d3.geomap.choropleth()
     .unitId('iso3');
 
 d3.csv('/data/custom-domain.csv', function(error, data) {
-    d3.select('#map')
-        .datum(data)
-        .call(map.draw, map);
+    map.draw(d3.select('#map').datum(data));
 });

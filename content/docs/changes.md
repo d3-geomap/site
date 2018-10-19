@@ -7,6 +7,7 @@ This page lists significant changes introduced in releases of d3.geomap.
 
 ## Changes in Version 2.0.0
 
+* The `draw` function now only accepts a single argument, the map selection.
 * Upgrade to D3 version 4.
 * Use mapshaper to create TopoJSON files. Id values are now accessed via the properties attribute of a feature object.
 

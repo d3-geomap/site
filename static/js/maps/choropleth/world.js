@@ -12,7 +12,6 @@ var map = d3.geomap.choropleth()
     .unitId('iso3');
 
 d3.csv('/data/sp.pop.totl.csv', function(error, data) {
-    d3.select('#map')
-        .datum(data)
-        .call(map.draw, map);
+    var selection = d3.select('#map').datum(data);
+    map.draw(selection);
 });

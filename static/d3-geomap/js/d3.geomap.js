@@ -346,7 +346,9 @@ class Geomap {
             y = centroid[1];
             k = this.properties.zoomFactor;
             this._.centered = d;
-        } else this._.centered = null;
+        } else {
+            this._.centered = null;
+        }
 
         this.svg.selectAll('path.unit').classed('active', this._.centered && (_ => _ === this._.centered));
 
@@ -360,7 +362,10 @@ class Geomap {
      * selection container element so they are responsive. Properties set before
      * will be kept.
      */
-    draw(selection, self) {
+    draw(selection) {
+        let self = this;
+        self.data = selection.datum();
+
         if (!self.properties.width) self.properties.width = selection.node().getBoundingClientRect().width;
 
         if (!self.properties.height) self.properties.height = self.properties.width / 1.92;
@@ -419,11 +424,6 @@ class Choropleth extends Geomap {
         return +d[this.properties.column];
     }
 
-    draw(selection, self) {
-        self.data = selection.datum();
-        super.draw(selection, self);
-    }
-
     defined(val) {
         return !(isNaN(val) || 'undefined' === typeof val || '' === val);
     }
@@ -438,8 +438,8 @@ class Choropleth extends Geomap {
 
         // Add new fill styles based on data values.
         self.data.forEach(d => {
-            let uid = d[self.properties.unitId].trim(),
-                val = d[self.properties.column].trim();
+            let uid = d[self.properties.unitId].toString().trim(),
+                val = d[self.properties.column].toString().trim();
 
             // selectAll must be called and not just select, otherwise the data
             // attribute of the selected path object is overwritten with self.data.
