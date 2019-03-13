@@ -1,4 +1,5 @@
 # Logya
+static/d3-geomap/
 deploy/
 *.log
 
