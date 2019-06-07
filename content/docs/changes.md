@@ -3,7 +3,21 @@ title: Changelog
 template: page.html
 created: 2015-06-11 21:15:47
 ---
-This page lists significant changes introduced in releases of d3.geomap.
+This page lists significant changes introduced in releases of d3-geomap.
+
+## Changes in Version 3.0.0
+
+This release introduces several changes that are backwards incompatible. On the plus side d3-geomap can now be imported via `import` or `require` from other npm modules. Many thanks to [Dylan Praul](https://github.com/dpraul) for his substantial contributions.
+
+* Provide a built version that other npm modules can consume with `import` or `require`.
+* Rename `d3.geomap.choropleth` to `d3.choropleth`.
+* Refer to the package as `d3-geomap` and to the JavaScript object as `d3.geomap`.
+* Remove the `colorbrewer` object, which provided color scales. Instead `d3-scale-chromatic`, which is included in D3, can be used.
+* The `d3-geomap` CSS class must be added to map elements for default styling.
+* The TopoJSON files included in the distribution are now built from [Natural Earth Vector](https://github.com/nvkelso/natural-earth-vector) version 4.1.0
+* The downloadable zip bundle does not include the dependencies any more.
+* The Rollup module bundler is now used for building the distribution.
+* Upgrade to D3 version 5.
 
 ## Changes in Version 2.0.0
 

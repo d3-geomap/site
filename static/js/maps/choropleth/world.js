@@ -3,7 +3,7 @@ var format = function(d) {
     return d3.format(',.02f')(d) + 'M';
 }
 
-var map = d3.geomap.choropleth()
+var map = d3.choropleth()
     .geofile('/d3-geomap/topojson/world/countries.json')
     .colors(colorbrewer.YlGnBu[9])
     .column('YR2010')

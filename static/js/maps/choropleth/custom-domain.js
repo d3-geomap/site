@@ -1,4 +1,4 @@
-var map = d3.geomap.choropleth()
+var map = d3.choropleth()
     .geofile('/d3-geomap/topojson/world/countries.json')
     .colors(['green','red'])
     .column('1800')

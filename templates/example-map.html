@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 
-{% block title %}{{ title }} • d3.geomap{% endblock%}
+{% block title %}{{ title }} • d3-geomap{% endblock%}
 
 {% block styles %}
-<link href="/d3-geomap/css/d3.geomap.css" rel="stylesheet">
+<link href="/d3-geomap/d3-geomap.css" rel="stylesheet">
 {{ super() }}
 {% endblock%}
 
@@ -16,7 +16,7 @@
         <div id="map"></div>
         {% if data %}
             <h3>Data</h3>
-            <p>See an excerpt of the data used in this map below. Currently CSV is the only supported data format for creating choropleth maps with d3.geomap.</p>
+            <p>See an excerpt of the data used in this map below. Currently CSV is the only supported data format for creating choropleth maps with d3-geomap.</p>
             <pre>{{ filesource(data, lines=6) }}...</pre>
         {% endif %}
         <hr>
@@ -27,7 +27,8 @@
 {% endblock %}
 
 {% block body_scripts %}
-<script src="/d3-geomap/vendor/d3.geomap.dependencies.min.js"></script>
-<script src="/d3-geomap/js/d3.geomap.min.js"></script>
+<script src="//unpkg.com/d3@5.9.2/dist/d3.min.js"></script>
+<script src="//unpkg.com/topojson@3.0.2/dist/topojson.min.js"></script>
+<script src="/d3-geomap/js/d3-geomap.min.js"></script>
 {{ super() }}
 {% endblock%}

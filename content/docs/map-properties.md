@@ -9,7 +9,7 @@ In addition map properties can be accessed via attributes to allow for customiza
 
 ### d3.geomap accessors
 
-This section documents accessors that can/must be set when a d3.geomap object is created.
+This section documents accessors that can/must be set when a `d3.geomap` object is created.
 
 #### geofile - required
 
@@ -25,7 +25,7 @@ A function to run when the update process is completed, i. e. the map is rendere
 
 #### projection - optional
 
-The map projection to be used. Defaults to `d3.geoNaturalEarth`. Can be selected from [core d3](https://github.com/d3/d3-geo/blob/master/README.md#projections) and extended [d3 geo projections](https://github.com/d3/d3-geo-projection).
+The map projection to be used. Defaults to `d3.geoNaturalEarth`. Other projections to use can be found in the [d3-geo](https://github.com/d3/d3-geo/blob/master/README.md#projections) and [d3-geo-projection](https://github.com/d3/d3-geo-projection) packages.
 
 #### rotate - optional
 
@@ -71,19 +71,19 @@ The loaded TopoJSON data, which gets assigned during the draw method.
 
 #### svg
 
-The [d3.selection](https://github.com/mbostock/d3/wiki/Selections) for the map object.
+The [d3-selection](https://github.com/d3/d3-selection) for the map object.
 
-### d3.geomap.choropleth accesors
+### d3.choropleth accessors
 
-In addition to the accessors from d3.geomap, d3.geomap.choropleth objects provide the accessors listed below..
+In addition to the accessors from `d3.geomap`, `d3.choropleth` objects provide the accessors listed below..
 
 #### column - required
 
-The column from the CSV file that contains the values to be displayed on the map. You provide the appropriate column heading as a string value to the column method.
+The column from the CSV file that contains the values to be displayed on the map. You provide the appropriate column heading as a string value to the `column` method.
 
 #### colors - optional
 
-An array of color values. You can use [color brewer](http://colorbrewer2.org/) schemes available via the `colorbrewer` object, e. g. `colorbrewer.OrRd[9]` for a sequential orange-red scheme with 9 different color values, which is the default.
+An array of color values. A sequential orange-red scheme with 9 different color values is set by default. The [d3-scale-chromatic](https://github.com/d3/d3-scale-chromatic) package provides many other color scales you can use.
 
 #### domain - optional
 
@@ -105,9 +105,9 @@ If set countries will be colored using a transition of the specified duration in
 
 #### valueScale - optional
 
-The D3 scale function to use to determine colors based on the domain, i. e. the input values, and the color range. Defaults to [d3.scale.quantize](https://github.com/mbostock/d3/wiki/Quantitative-Scales#quantize).
+The D3 scale function to use to determine colors based on the domain, i. e. the input values, and the color range. Defaults to [d3.scaleQuantize](https://github.com/d3/d3-scale#quantize-scales).
 
-### d3.geomap.choropleth attributes
+### d3.choropleth attributes
 
 #### data
 
