@@ -3,7 +3,7 @@
 {% block title %}{{ title }} • d3-geomap{% endblock%}
 
 {% block styles %}
-<link href="/d3-geomap/d3-geomap.css" rel="stylesheet">
+<link href="/d3-geomap/d3-geomap.min.css" rel="stylesheet">
 {{ super() }}
 {% endblock%}
 
@@ -13,7 +13,7 @@
     <div class="col-lg-10 col-lg-offset-1">
         <h1>{{ title }}</h1>
         <div>{{ body }}</div>
-        <div id="map"></div>
+        <div id="map" class="d3-geomap"></div>
         {% if data %}
             <h3>Data</h3>
             <p>See an excerpt of the data used in this map below. Currently CSV is the only supported data format for creating choropleth maps with d3-geomap.</p>
@@ -29,6 +29,6 @@
 {% block body_scripts %}
 <script src="//unpkg.com/d3@5.9.2/dist/d3.min.js"></script>
 <script src="//unpkg.com/topojson@3.0.2/dist/topojson.min.js"></script>
-<script src="/d3-geomap/js/d3-geomap.min.js"></script>
+<script src="/d3-geomap/d3-geomap.min.js"></script>
 {{ super() }}
 {% endblock%}
