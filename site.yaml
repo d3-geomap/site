@@ -1,6 +1,6 @@
 # General settings that will be available in templates.
 site:
-    base_url: http://d3-geomap.github.io
+    base_url: https://d3-geomap.github.io
     disqus_shortname: null
     author: Ramiro Gómez
     brand: d3-geomap

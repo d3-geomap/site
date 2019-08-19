@@ -5,7 +5,7 @@
     <description>{{ description }}</description>
     <lastBuildDate>{{ last_build.strftime("%a, %d %b %Y %H:%M:%S %z") }}</lastBuildDate>
     <generator>Logya</generator>
-    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    <docs>https://blogs.law.harvard.edu/tech/rss</docs>
     {% for doc in docs[:10] %}
     <item>
         <title><![CDATA[{{ doc.title }}]]></title>

@@ -7,7 +7,7 @@ data: static/data/sp.pop.totl.csv
 scripts:
 - /js/maps/choropleth/world.js
 ---
-This example shows how to create a choropleth world map with `d3.choropleth`. It displays world population data downloaded from the [World Bank databank](http://data.worldbank.org/indicator/SP.POP.TOTL).
+This example shows how to create a choropleth world map with `d3.choropleth`. It displays world population data downloaded from the [World Bank databank](https://data.worldbank.org/indicator/SP.POP.TOTL).
 
 You can set various properties of the map when instantiating a map object. First specify the TopoJSON file to load, then set the color scheme, choose the `YR2010` column as the one to display, set the format according to the `format` function defined first, display a legend, and set the unitId to `iso3`. Let's go into more details about the individual settings.
 

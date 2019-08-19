@@ -7,7 +7,7 @@ data: static/data/venture-capital.csv
 scripts:
 - /js/maps/choropleth/us-states.js
 ---
-This example shows how to create a choropleth map of states in the US using data from the [National Science Foundation](http://www.nsf.gov/statistics/seind14/index.cfm/state-data/download.htm) about venture capital spent in the US in 2012.
+This example shows how to create a choropleth map of states in the US using data from the [National Science Foundation](https://www.nsf.gov/statistics/seind14/index.cfm/state-data/download.htm) about venture capital spent in the US in 2012.
 
 I'll only explain the differences to the example [choropleth map of the world](/map/choropleth/world/), where you can learn about the meaning of the other settings.
 
