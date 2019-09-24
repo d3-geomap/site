@@ -5,6 +5,11 @@ created: 2015-06-11 21:15:47
 ---
 This page lists significant changes introduced in releases of d3-geomap.
 
+## Changes in Version 3.1.0
+
+* Add optional geoData property as alternative to geofile. See [pull request](https://github.com/yaph/d3-geomap/pull/53).
+* Increase the default scale factor optimized for world map.
+
 ## Changes in Version 3.0.0
 
 This release introduces several changes that are backwards incompatible. On the plus side d3-geomap can now be imported via `import` or `require` from other npm modules. Many thanks to [Dylan Praul](https://github.com/dpraul) for his substantial contributions.
