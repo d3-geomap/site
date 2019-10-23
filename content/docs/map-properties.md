@@ -5,7 +5,7 @@ created: 2014-10-02 12:27:22
 ---
 Maps can be customized through the accessors documented here. If an accessor is called with a value the value will be set and the map object returned. If called without an argument the current value of the corresponding property will be returned.
 
-In addition map properties can be accessed via attributes to allow for customizations beyond the capabilities of this library.
+In addition map properties can be accessed via attributes to allow for customizations beyond the capabilities of this library. The attributes are accessible once the map is rendered. You can make use of them in a function that you pass to the `postUpdate` accessor, when creating a map.
 
 ## d3.geomap accessors
 
@@ -72,6 +72,10 @@ The zoom factor to use when a map unit is clicked. Defaults to 4.
 ### geo
 
 The loaded TopoJSON data, which gets assigned during the draw method.
+
+### path
+
+A [d3.geoPath](https://github.com/d3/d3-geo#geoPath) object in the projection of the created map.
 
 ### svg
 
