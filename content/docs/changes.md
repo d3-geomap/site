@@ -5,6 +5,10 @@ created: 2015-06-11 21:15:47
 ---
 This page lists significant changes introduced in releases of d3-geomap.
 
+## Changes in Version 3.2.0
+
+* Identifier values in CSV files used for map units can now contain whitespace, see [pull request](https://github.com/yaph/d3-geomap/pull/56).
+
 ## Changes in Version 3.1.0
 
 * Add optional geoData property as alternative to geofile. See [pull request](https://github.com/yaph/d3-geomap/pull/53).
