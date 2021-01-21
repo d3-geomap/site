@@ -5,6 +5,11 @@ created: 2015-06-11 21:15:47
 ---
 This page lists significant changes introduced in releases of d3-geomap.
 
+## Changes in Version 3.3.0
+
+* Use nightwatch.js for end to end tests and add several tests for example maps.
+* Add `unitName` function which tests that the property to be used as the `unitId` is defined, before manipulating it and returning it. Fixes issue #58.
+
 ## Changes in Version 3.2.0
 
 * Identifier values in CSV files used for map units can now contain whitespace, see [pull request](https://github.com/yaph/d3-geomap/pull/56).
